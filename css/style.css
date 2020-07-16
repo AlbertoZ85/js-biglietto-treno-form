@@ -3,3 +3,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* TYPOGRAPHY */
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.container-fullwidth {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.armytimes.com/resizer/1cfT-8FQE9r80arFAZC2eRfsFaw=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/QCE3EYTTHBGZTHGT4DXIVGLYRY.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* DA CANCELLARE */
+    height: 500px;
+    /* background-color: rgba(0,0,0,0.5);
+    border: 1px solid black; */
+}
+
+.data-entry, .data-output {
+    height: 50%;
+}
+
+/* FORM */
+.form {
+    height: 85%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.form-boxes, .form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TICKET */
+.user-ticket {
+    height: 85%;
+    background-color: white;
+}
+
+.user-details {
+    display: flex;
+    height: 80%;
+}
+
+.user-name, .user-offer, .user-carriage, .user-code, .ticket-price {
+    flex: 0 1 calc(100%/5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
