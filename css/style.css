@@ -1,18 +1,8 @@
+/* GENERAL STYLING */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* TYPOGRAPHY */
-h2 {
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-}
-
-h3 {
-    text-transform: uppercase;
 }
 
 .container-fullwidth {
@@ -35,6 +25,17 @@ h3 {
 
 .data-entry, .data-output {
     height: 50%;
+}
+
+/* TYPOGRAPHY */
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 /* FORM */
@@ -75,4 +76,15 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+/* HIDDEN/SHOW */
+.hidden {
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.25s;
 }

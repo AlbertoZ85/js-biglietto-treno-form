@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Biglietto treno</title>
+    <title>Ticket Office</title>
 </head>
 <body>
     <div class="container-fullwidth">
@@ -16,15 +16,15 @@
                     <div class="form-boxes">
                         <div class="box">
                             <p>Nome e Cognome</p>
-                            <input type="text" value="">
+                            <input type="text" placeholder="" id="full-name-input">
                         </div>
                         <div class="box">
                             <p>Km da percorrere</p>
-                            <input type="number" value="">
+                            <input type="number" id="km-input">
                         </div>
                         <div class="box">
                             <p>Fascia d'età</p>
-                            <select>
+                            <select id="age-input">
                                 <option value="minor">Minorenne</option>
                                 <option value="adult">Maggiorenne</option>
                                 <option value="over">Over 65</option>
@@ -32,35 +32,35 @@
                         </div>
                     </div>
                     <div class="form-buttons">
-                        <button type="button">Genera</button>
-                        <button type="button">Annulla</button>
+                        <button type="button" id="genera">Genera</button>
+                        <button type="button" id="annulla">Annulla</button>
                     </div>
                 </div>
             </div>
-            <div class="data-output">
+            <div class="data-output hidden" id="ticket-print">
                 <h2>Il tuo biglietto</h2>
                 <div class="user-ticket">
                     <h3>Dettaglio passeggeri</h3>
                     <div class="user-details">
                         <div class="user-name">
                             <h4>Nome passeggero</h4>
-                            <p>Pippo</p>
+                            <p id="full-name-output"></p>
                         </div>
                         <div class="user-offer">
                             <h4>Offerta</h4>
-                            <p>sconto</p>
+                            <p id="offer"></p>
                         </div>
                         <div class="user-carriage">
                             <h4>Carrozza</h4>
-                            <p>7</p>
+                            <p id="carriage"></p>
                         </div>
                         <div class="user-code">
                             <h4>Codice CP</h4>
-                            <p>97928</p>
+                            <p id="code"></p>
                         </div>
                         <div class="ticket-price">
                             <h4>Costo biglietto</h4>
-                            <p>3.36 €</p>
+                            <p id="price"></p>
                         </div>
                     </div>
                 </div>
