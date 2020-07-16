@@ -51,12 +51,11 @@ function discount(category) {
     var offer = 'Prezzo intero';
     if (category == 'minor') {
         offer = 'Silver: -20%';
-    } else if (category == 'adult') {
+    } else if (category == 'over') {
         offer = 'Gold: -40%';
     }
     return offer;
 }
-console.log(discount());
 
 // b. GENERAZIONE NUMERI RANDOM
 function randomNum(min,max) {
@@ -66,9 +65,9 @@ function randomNum(min,max) {
 // c. CALCOLO PREZZO BIGLIETTO
 function ticketPrice(km,eta) {
     var costo = 0.21*km;
-    if (eta == minor) {
+    if (eta == 'minor') {
         costo -= 0.20*costo;
-    }   else if (eta == over) {
+    }   else if (eta == 'over') {
         costo -= 0.40*costo;
     }
     return costo.toFixed(2);
