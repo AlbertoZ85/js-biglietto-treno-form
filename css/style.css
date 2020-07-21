@@ -6,9 +6,7 @@
 }
 
 .container-fullwidth {
-    display: flex;
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* problemi di sforamento verticale del div, cambiato 'height' in 'min-height' */
     background-image: url('https://www.armytimes.com/resizer/1cfT-8FQE9r80arFAZC2eRfsFaw=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/QCE3EYTTHBGZTHGT4DXIVGLYRY.jpg');
     background-size: cover;
     background-position: center;
@@ -19,8 +17,6 @@
     margin: auto;
     /* DA CANCELLARE */
     /* height: 500px; */
-    /* background-color: rgba(0,0,0,0.5);
-    border: 1px solid black; */
 }
 
 .data-entry, .data-output {
@@ -32,14 +28,18 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
+    width: 60%;
     margin: 30px auto;
     color: #30a0ce;
     background-color: #f5f5f5bb;
-    width: 60%;
 }
 
 h3, h4 {
     font-size: 20px;
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 h4 {
