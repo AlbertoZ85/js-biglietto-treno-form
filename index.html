@@ -15,16 +15,17 @@
                 <div class="form">
                     <div class="form-boxes">
                         <div class="box">
-                            <p>Nome e Cognome</p>
-                            <input type="text" placeholder="" id="full-name-input">
+                            <label for="full-name-input">Nome e Cognome</label>
+                            <input type="text" placeholder="Inserisci nome e cognome" value="" required id="full-name-input">
                         </div>
                         <div class="box">
-                            <p>Km da percorrere</p>
-                            <input type="number" id="km-input">
+                            <label for="km-input">Km da percorrere</label>
+                            <input type="number" placeholder="1-500" value="" required id="km-input">
                         </div>
                         <div class="box">
-                            <p>Fascia d'età</p>
-                            <select id="age-input">
+                            <label for="age-input">Fascia d'età</label>
+                            <select required id="age-input">
+                                <option value="">Scegli...</option>
                                 <option value="minor">Minorenne</option>
                                 <option value="adult">Maggiorenne</option>
                                 <option value="over">Over 65</option>

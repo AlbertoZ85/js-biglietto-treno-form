@@ -15,41 +15,79 @@
 }
 
 .container {
-    width: 80%;
-    height: 500px;
+    width: 70%;
     margin: auto;
     /* DA CANCELLARE */
+    /* height: 500px; */
     /* background-color: rgba(0,0,0,0.5);
     border: 1px solid black; */
 }
 
 .data-entry, .data-output {
-    height: 50%;
+    padding: 15px;
 }
 
-/* TYPOGRAPHY */
+/* TYPOGRAPHY AND BUTTONS*/
 h2 {
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    font-size: 25px;
+    margin: 30px auto;
+    color: #30a0ce;
+    background-color: #f5f5f5bb;
+    width: 60%;
 }
 
-h3 {
+h3, h4 {
+    font-size: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.user-details div:first-of-type h4{
     text-transform: uppercase;
+}
+
+.form-boxes label {
+    padding: 10px;
+    font-size: 22.5px;
+}
+
+button {
+    background-color: #b91450;
+    color: white;
+    margin: 0 30px;
+    padding: 10px 15px;
+    font-size: 22.5px;
+    border-radius: 5px;
+    border: 1px solid #b91450;
+}
+
+button:hover {
+    background-color: white;
+    color: #b91450;
+    box-shadow: 3px 3px 3px #b91450;
+}
+
+button:active {
+    transform: scale(0.97);
+    border: 1px solid #b91450;
+    box-shadow: 1px 1px 1px #b91450;
 }
 
 /* FORM */
 .form {
-    height: 85%;
-    background-color: white;
-    border-radius: 30px;
+    background-color: #f5f5f5bb;
+    border-radius: 20px;
 }
 
 .form-boxes, .form-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    padding: 25px 0;
 }
 
 .box {
@@ -57,25 +95,49 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 40px;
+}
+
+input, select {
+    font-size: 15px;
+}
+
+input[type="number"] {
+    width: 75px;
+}
+
+select option:first-of-type {
+    display: none;
 }
 
 /* TICKET */
 .user-ticket {
-    height: 85%;
-    background-color: white;
+    padding: 20px;
+    background-color: #f5f5f5bb;
 }
 
 .user-details {
     display: flex;
-    height: 80%;
+    padding: 10px 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .user-name, .user-offer, .user-carriage, .user-code, .ticket-price {
     flex: 0 1 calc(100%/5);
+    height: 175px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.user-name {
+    background-color: #808080;
+}
+
+.user-details p {
+    font-size: 22.5px;
 }
 
 /* HIDDEN/SHOW */
